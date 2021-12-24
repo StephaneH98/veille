@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 
 # https://towardsdatascience.com/an-extensive-guide-to-collecting-tweets-from-twitter-api-v2-for-academic-research-using-python-3-518fcb71df2a
 # To set your environment variables in your terminal run the following line:
-# export 'BEARER_TOKEN'='AAAAAAAAAAAAAAAAAAAAAH7BWwEAAAAAZHsbx2PBCsCAtIx9XRtpueU%2BGNY%3DyqzI46Ut7ytKxCmYQjr7RGsyRGKWbdvyLI7Ov3Yboc3iZWS70D'
+# export 'BEARER_TOKEN'='enter token here'
 bearer_token = os.environ.get("BEARER_TOKEN")
 
 
