@@ -6,7 +6,8 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# https://towardsdatascience.com/an-extensive-guide-to-collecting-tweets-from-twitter-api-v2-for-academic-research-using-python-3-518fcb71df2a
+# To get the tweets : https://towardsdatascience.com/an-extensive-guide-to-collecting-tweets-from-twitter-api-v2-for-academic-research-using-python-3-518fcb71df2a
+# To send the email : https://realpython.com/python-send-email/
 # To set your environment variables in your terminal run the following line:
 # export 'BEARER_TOKEN'='enter token here'
 bearer_token = os.environ.get("BEARER_TOKEN")
