@@ -78,12 +78,6 @@ def connect_to_endpoint(_url, _params):
     return response.json()
 
 
-def main():
-    keywords = get_key_word_list()  
-    json_response = connect_to_endpoint(search_url, query_params)
-    mail_content = analyse_response(json_response, keywords)
-    send_mail(mail_content)
-
 def analyse_response(_json_response, _keywords):
     tweet_list = _json_response["data"]
     mail_content = ""
@@ -113,4 +107,7 @@ def add_content_to_mail(_text, _mail_content):
     return _mail_content
 
 if __name__ == "__main__":
-    main()
+    keywords = get_key_word_list()  
+    json_response = connect_to_endpoint(search_url, query_params)
+    mail_content = analyse_response(json_response, keywords)
+    send_mail(mail_content)
