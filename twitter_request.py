@@ -1,6 +1,7 @@
 import requests
 import os
 import json
+import sys
 from datetime import date, timedelta
 import smtplib, ssl
 from email.mime.text import MIMEText
@@ -17,7 +18,7 @@ bearer_token = os.environ.get("BEARER_TOKEN")
 port = 465 #For ssl
 from_addr = ""
 to_addr = ""
-password = str("")
+password = str(sys.argv[1])
 
 
 ## Parameters ##
